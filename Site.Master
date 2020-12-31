@@ -1,0 +1,75 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="WebApplication3.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 148px;
+            height: 98px;
+            allign:"right";
+        }
+    </style>
+</head>
+<body background="images%20for%20site/friendship-30d.jpg">
+    <form runat="server" 
+    
+    
+    
+    
+    style="background-image: url('/images%20for%20site/19.jpg'); height: 1879px; margin-top: 0px;">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1 style="background-color: #FFFFFF; height: 99px;">
+                    <asp:Image ID="Image1" runat="server" Height="97px" 
+                        ImageUrl="~/images for site/1443347569154.jpg" Width="235px" 
+                        style="text-align: left" />
+                    <img alt="" class="style1" 
+                        src="images%20for%20site/feature_image__image_by_diaries-france_org1.jpg" /></h1>
+            </div>
+            <div class="clear hideSkiplink" style="background-color: #0099CC">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    BackColor="Black">
+                    <Items>
+                        <asp:MenuItem Text="Catagories" Value="Catagories">
+                            <asp:MenuItem Text="Men's" Value="Men's">
+                                <asp:MenuItem NavigateUrl="~/MenTshirt.aspx" Text="T-Shirts" Value="T-Shirts"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MenShirt.aspx" Text="Shirts" Value="Shirts"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MenJeans.aspx" Text="Jeans" Value="Jeans"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MenWatches.aspx" Text="Watches" Value="Watches"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MenFootware.aspx" Text="Footware" Value="Footware"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Women's" Value="Women's">
+                                <asp:MenuItem NavigateUrl="~/WomenTop.aspx" Text="Tops &amp; T-Shirts" Value="Tops &amp; T-Shirts">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/WomenJeans.aspx" Text="Jeans" Value="Jeans"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/WomenWatches.aspx" Text="Watches" Value="Watches"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/WomenFootware.aspx" Text="Footware" Value="Footware"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Mobile.aspx" Text="Mobiles" Value="Mobiles"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="30px" 
+                    ImageUrl="~/images for site/logo-big-shopping.png" Width="30px" 
+                    align="right"/>
+                <asp:ImageButton ID="ImageButton2" runat="server" Height="30px" 
+                    ImageUrl="~/images for site/user_account_icon.jpg" 
+                    Width="30px" align="right" />
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
